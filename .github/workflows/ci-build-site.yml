@@ -18,12 +18,11 @@
 name: CI - Build Pulsar Website
 on:
   push:
-    branches: [main]
   workflow_dispatch:
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
-  cancel-in-progress: true
+# concurrency:
+  # group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
+  # cancel-in-progress: true
 
 jobs:
   build-website:
