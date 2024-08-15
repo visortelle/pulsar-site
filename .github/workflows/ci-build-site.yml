@@ -26,7 +26,6 @@ on:
 
 jobs:
   build-website:
-    if: ${{ github.repository == 'apache/pulsar-site' }}
     name: Build and publish pulsar website-next
     runs-on: ubuntu-latest
     timeout-minutes: 600
